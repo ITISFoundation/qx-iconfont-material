@@ -1,0 +1,13 @@
+version: '3'
+services:
+  qx:
+    image: "itisfoundation/qx-iconfont-material"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /home/node/src
+    volumes:
+      - '.:/home/node/src'
+    ports:
+      - '31753:31753'
+    command: serve --verbose

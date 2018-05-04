@@ -1,0 +1,71 @@
+/**
+ * shows all the icons aviable in the current qooxdoo appliaction
+ */
+
+/* global document,iconfont */
+
+qx.Class.define("iconbrowser.Application", {
+  extend: qx.application.Standalone,
+
+  members: {
+    main: function() {
+      this.base(arguments);
+      if (qx.core.Environment.get("qx.debug")) {
+        // support native logging capabilities, e.g. Firebug for Firefox
+        qx.log.appender.Native;
+      }
+      // dummy call to the inconfont class which will trigger the compiler to copy the
+      // font files to the output class.
+      // you could also explicitly include the class in the compile.json file
+      iconfont.material.Include;
+      let copy = document.createElement("input");
+      document.body.appendChild(copy);
+      // Document is the application root
+      let iconDb = {};
+      for (let key in qx.$$resources) {
+        let re = key.match(/^@([^/]+)\/([^/]+)/);
+        if (!re) {
+          continue;
+        }
+        if (!iconDb[re[1]]) {
+          iconDb[re[1]] = [];
+        }
+        iconDb[re[1]].push({
+          handle: key,
+          name: re[2]
+        });
+      }
+
+      var doc = this.getRoot();
+      var scroll = new qx.ui.container.Scroll();
+      doc.add(scroll, {
+        top: 20,
+        left: 20,
+        right: 20,
+        bottom: 20
+      });
+      for (let font in iconDb) {
+        let list = new qx.ui.container.Composite(new qx.ui.layout.Flow());
+        scroll.add(list);
+        let label = new qx.ui.basic.Label(font).set({
+          font: new qx.bom.Font(30),
+          width: 4*60
+        });
+        list.add(label);
+        iconDb[font].forEach(function(item) {
+          let img = new qx.ui.form.Button(null, item.handle).set({
+            toolTipText: item.name + " - click to copy",
+            minWidth: 60,
+            minHeight: 60
+          });
+          img.addListener("click", function() {
+            copy.value = item.handle;
+            copy.select();
+            document.execCommand("copy");
+          });
+          list.add(img);
+        });
+      }
+    }
+  }
+});
