@@ -1,0 +1,38 @@
+{
+  "targets": [
+    {
+      "type": "source",
+      "outputPath": "source-output"
+    },
+    {
+      "type": "hybrid",
+      "outputPath": "hybrid-output"
+    },
+    {
+      "type": "build",
+      "outputPath": "build-output"
+    }
+  ],
+  "defaultTarget": "source",
+  "serve": {
+    "listenPort": 31753
+  },
+  "locales": [
+    "en"
+  ],
+  "environment": {
+    "qx.icontheme": "Tango"
+  },
+  "applications": [
+    {
+      "class": "iconbrowser.Application",
+      "theme": "qx.theme.Simple",
+      "name": "iconbrowser",
+      "writeIndexHtmlToRoot": true
+    }
+  ],
+  "libraries": [
+    "../.npm-global/lib/node_modules/qooxdoo-sdk/framework",
+    "."
+  ]
+}

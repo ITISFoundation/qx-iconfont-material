@@ -1,0 +1,43 @@
+{
+  "info" :
+  {
+    "name" : "qx-iconfont-material",
+
+    "summary" : "theme for the osparc web ui",
+    "description" : "a material design ispired dark theme for osparc",
+    "homepage" : "https://github.com/ITISFoundation/qx-osparc-theme",
+
+    "license" : "MIT license",
+    "authors" : [
+      {
+        "name": "Tobias Oetiker (oetiker)",
+        "email": "tobi@itis.ethz.ch"
+      }
+    ],
+    "version" : "0.0.4",
+    "qooxdoo-range": "5.x - 6.0.0-alpha"
+  },
+
+  "provides" :
+  {
+    "namespace"   : "iconfont.material",
+    "encoding"    : "utf-8",
+    "class"       : "source/class",
+    "resource"    : "source/resource",
+    "translation" : "source/translation",
+    "type"        : "contribution",
+    "webfonts": [
+      {
+        "name": "MaterialIcons",
+        "defaultSize": 32,
+        "mapping": "iconfont/material/MaterialIcons-Regular.json",
+        "resources": [
+          "iconfont/material/MaterialIcons-Regular.ttf",
+          "iconfont/material/MaterialIcons-Regular.woff",
+          "iconfont/material/MaterialIcons-Regular.woff2",
+          "iconfont/material/MaterialIcons-Regular.eot"
+        ]
+      }
+    ]
+  }
+}
