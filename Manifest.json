@@ -14,7 +14,7 @@
         "email": "tobi@itis.ethz.ch"
       }
     ],
-    "version" : "0.0.0",
+    "version" : "0.0.1",
     "qooxdoo-range": "5.x - 6.0.0-alpha"
   },
 

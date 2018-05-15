@@ -32,7 +32,7 @@
     }
   ],
   "libraries": [
-    "../.npm-global/lib/node_modules/qooxdoo-sdk/framework",
+    "../qooxdoo-sdk/framework",
     "."
   ]
 }

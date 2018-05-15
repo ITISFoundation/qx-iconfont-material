@@ -6,4 +6,4 @@
  * @asset(iconfont/material/MaterialIcons-Regular.woff)
  * @asset(iconfont/material/MaterialIcons-Regular.woff2)
  */
-qx.Class.define("iconfont.material.Include", {});
+qx.Class.define("iconfont.Material", {});
