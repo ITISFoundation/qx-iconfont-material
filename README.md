@@ -13,14 +13,14 @@ $ qx contrib install ITISFoundation/qx-iconfont-material
 
 To induce the compiler to copy the font file you can either add a 'dummy' call to:
 
-`iconfont.material.Include;`
+`iconfont.Material;`
 
 to your appliaction or you can explicitly include the class in the `compile.json` file.
 
 Your app now knows about all the material icons. To access the icons
 use names like:
 
-`@MaterialIcon/sms_failed/40`
+`@MaterialIcons/sms_failed/40`
 
 The demo app shows a list of all the icons available.
 
