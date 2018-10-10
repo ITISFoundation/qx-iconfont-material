@@ -12,7 +12,7 @@ USER node
 ENV PATH=/home/node/node_modules/.bin:$PATH
 
 COPY --chown=node:node package.json /home/node/
-RUN cd /home/node && npm install && git clone --depth=1 https://github.com/qooxdoo/qooxdoo.git qooxdoo-sdk
+RUN cd /home/node && npm install
 
 WORKDIR /home/node/src
 VOLUME  /home/node/src
