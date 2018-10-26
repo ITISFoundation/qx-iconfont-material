@@ -45,7 +45,7 @@ and give this a whirl.
    ```console
    $ docker-compose up
    ```
-  Now you can open http://localhost:8744 to see the widgetbrowser. The selectbox in the top right corner lets you select the OSparc theme.
+  Now you can open http://localhost:31753 to see the icon browser.
 
 If you want to run a different qx command, you can do this too
 
@@ -56,5 +56,5 @@ $ docker-compose run qx lint
 Inspect the image interactively
 
 ```console
-$ docker run --entrypoint /bin/bash -i -t itisfoundation/qx-osparc-theme
+$ docker run --entrypoint /bin/bash -i -t itisfoundation/qx-iconfont-material
 ```
