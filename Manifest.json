@@ -14,8 +14,7 @@
         "email": "tobi@itis.ethz.ch"
       }
     ],
-    "version" : "0.1.1",
-    "qooxdoo-range": "6.0.0-alpha-20180529 - 6.x"
+    "version" : "0.1.2"
   },
 
   "provides" :
@@ -32,9 +31,10 @@
         "defaultSize": 32,
         "mapping": "iconfont/material/MaterialIcons-Regular.json",
         "resources": [
-          "iconfont/material/MaterialIcons-Regular.ttf",
+          "iconfont/material/MaterialIcons-Regular.eot",
+          "iconfont/material/MaterialIcons-Regular.woff2",
           "iconfont/material/MaterialIcons-Regular.woff",
-          "iconfont/material/MaterialIcons-Regular.woff2"
+          "iconfont/material/MaterialIcons-Regular.ttf"
         ]
       }
     ]
