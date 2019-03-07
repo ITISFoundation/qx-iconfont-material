@@ -5,7 +5,7 @@
     "eslint-config-qx": "^0.1.0",
     "eslint-plugin-qx-rules": "^0.1.0",
     "qooxdoo-sdk": "^6.0.0-alpha-20181218-ed460159",
-    "qxcompiler": "^0.2.28"
+    "qxcompiler": "^0.3.0-alpha"
   },
   "scripts": {
     "lint": "eslint ./source/class/iconbrowser/**/*.js",
