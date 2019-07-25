@@ -27,11 +27,7 @@
     {
       "class": "iconbrowser.Application",
       "theme": "qx.theme.Simple",
-      "name": "iconbrowser",
-      "writeIndexHtmlToRoot": true
+      "name": "iconbrowser"
     }
-  ],
-  "libraries": [
-    "."
   ]
 }
