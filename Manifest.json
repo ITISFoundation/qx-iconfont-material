@@ -6,7 +6,7 @@
     "homepage": "https://github.com/ITISFoundation/qx-osparc-theme",
     "license": "MIT license",
     "authors": [],
-    "version": "0.1.4"
+    "version": "0.1.5"
   },
   "provides": {
     "namespace": "iconfont.material",
