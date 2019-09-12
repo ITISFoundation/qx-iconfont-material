@@ -6,7 +6,14 @@
     "homepage": "https://github.com/ITISFoundation/qx-osparc-theme",
     "license": "MIT license",
     "authors": [],
-    "version": "0.1.5"
+    "version": "0.1.5",
+    "license": "MIT license",
+    "authors" : [
+      {
+        "name": "Tobias Oetiker (oetiker)",
+        "email": "tobi@itis.ethz.ch"
+      }
+    ],
   },
   "provides": {
     "namespace": "iconfont.material",
