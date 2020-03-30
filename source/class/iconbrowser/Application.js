@@ -1,8 +1,9 @@
+/* eslint-disable object-curly-newline */
+/* global document,iconfont */
+
 /**
  * shows all the icons aviable in the current qooxdoo appliaction
  */
-
-/* global document,iconfont */
 
 qx.Class.define("iconbrowser.Application", {
   extend: qx.application.Standalone,
@@ -40,7 +41,7 @@ qx.Class.define("iconbrowser.Application", {
 
       var doc = this.getRoot();
       var scroll = new qx.ui.container.Scroll().set({
-        padding: [20,20,20,20]
+        padding: [20, 20, 20, 20]
       });
       doc.add(scroll, {
         top: 0,
